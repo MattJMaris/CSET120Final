@@ -1,22 +1,45 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="stored.js" async></script>
+    <script src="index.js" async></script>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    <form class="box" action="coal" method="post">
-        <h1>
-            signup
-        </h1>
-    <input type="text" name="" placeholder="Enter Username" id="username">
-    <input type="Email" placeholder="Enter Email Address" id="Email">
-    <input type="password" name="" placeholder="Enter Password" id="password">
-    <div>
-        <a href="login.HTML"></a><p>Do you already have a account with us?</p>
-        <a href="#"></a><p>Forget a password</p>
+    <a href="profile.html">Check Your Account</a>
+    <div class="container">
+        <label>Create your Username</label> <br> <br>
+        <input type="text" id="Username" placeholder="Your Username Here"> <br> <br>
+        <label>Create your Password</label> <br> <br> 
+        <input type="password" id="myInput" placeholder="Your Password Here">
+        <br><br>
+        <button type="submit">Login</button> <br>
     </div>
+
+<br><br>
+    <fieldset>
+        <legend>Insert Data</legend>
+        <input type="text" id="inputKey" placeholder="Enter Key...">
+        <input type="password" id="inputValue" placeholder="Enter Value...">
+        <button type="button" id="btnInsert">Insert Data</button>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Local Storage Output</legend>
+        <div id="lsOutput">
+    
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Logout</legend>
+
+        <button onclick="btnLogOut()">Log Out</button>
+    </fieldset>
+    
+
 </body>
 </html>

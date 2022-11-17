@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link rel="stylesheet" href="carousel.css">
+</head>
+<body>
+    <div class="carousel">
+        <div
+        class="carousel-scroll-container"
+        role="region"
+        aria-label="Image carousel"
+        tabindex="0"
+        >
+            <ol class="carousel-media" role="list">
+                <li class="carousel-item">
+                    <img src="Images/Italian1.png" alt="Pizza Napoletana"
+                    width="320px" height="280px"
+                    loading="lazy" decoding="async">
+                </li>
+                <li class="carousel-item">
+                    <img src="Images/Italian2.png" alt="Pizza Napoletana"
+                    width="320px" height="280px"
+                    loading="lazy" decoding="async">
+                </li>
+                <!---More Images Can Go Here-->
+            </ol>
+    </div>
+    </div>
+    <template id="carousel-controls">
+        <ol role="list"
+        class="carousel-controls"
+        aria-label="Navigation Controls"
+        >
+        <li>
+            <button class="carousel-control"
+            aria-label="Previous"
+            data-direction="start"
+            >
+            <svg 
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            >
+                <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+        </button>
+        </li>
+        <li>
+            <button class="carousel-control"
+            aria-label="Next" data-direction="end">
+                <svg 
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                >
+                <polyline points="9 18 15 12 9 6"></polyline>    
+                </svg>
+            </button>
+        </li>
+    </ol>
+    </template>
+</body>
+</html>
