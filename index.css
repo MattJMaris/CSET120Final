@@ -1,3 +1,58 @@
 * {
-
+ text-align: center;
+ font-family: 'Allerta Stencil', sans-serif;
+ font-family: 'Lobster', cursive;
 }
+
+html{
+    background-image: url('img/spaghetti.jpg');
+    background-repeat: none;
+    background-size: 100% 800px;
+}
+
+
+/*user,pass,email,button styling*/
+#username{
+    border-radius: 25px;
+    border: solid black 1px;
+    background-image: none;
+}
+
+#password{
+    border-radius: 25px;
+    border: solid black 1px;
+    background-image: none;
+}
+
+#email{
+    border-radius: 25px;
+    border: solid black 1px;
+    background-image: none;
+}
+
+#login-button{
+    border-radius: 25px;
+    border: solid black 1px;
+    background-image: none;
+}
+
+#password-reset{
+    background-image: none;
+}
+
+#create-acc{
+    background-image: none;
+    background-repeat: none;
+}
+/*link styling*/
+
+a:link{
+    text-decoration: none;
+    color:black;
+    background-image: none;
+}
+
+a:link:hover{
+    text-decoration: overline black 3px;
+}
+
