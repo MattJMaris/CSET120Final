@@ -31,3 +31,4 @@ for (let i=0; i<localStorage.length; i++) {
 };
 
 //Need to make location.reload() take you to the landingPage
+
