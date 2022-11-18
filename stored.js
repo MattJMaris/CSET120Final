@@ -29,3 +29,5 @@ for (let i=0; i<localStorage.length; i++) {
 
     lsOutput.innerHTML += `${key}<br/>`;
 };
+
+//Need to make location.reload() take you to the landingPage
