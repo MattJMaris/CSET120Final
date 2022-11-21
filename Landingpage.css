@@ -21,9 +21,6 @@ header {
     padding: 30px 10%;
 }
 
-.logo {
-    cursor: pointer;
-}
 
 .head{
     list-style: none;
@@ -130,4 +127,35 @@ button:hover{
     outline: none;
     background: transparent;
     margin: 15px 0 0 10px;
+}
+.catagories{
+    width: max-content;
+    margin: 25px;
+    border: 1px solid #184d47;
+    border-radius: 0 0 50px 50px;
+    display:inline-block ;
+}
+.catagories:hover{
+    box-shadow: 0 0 10px 3px #184d47;
+}
+
+.item-image{
+    height: 200px;
+    width: 200px;
+    border-radius: 0 0 50px 50px;
+    padding: 10px;
+}
+.image-title{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+height: 600px;
+width: 185ch;
 }
