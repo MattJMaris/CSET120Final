@@ -22,7 +22,7 @@ function SlideShow(n) {
     for (i = 0; i < circles.length; i++){
         circles[i].className = circles[i].className.replace("enable", "");
     }
-    slides[slidesPosition-1].getElementsByClassName.display = "block";
+    slides[slidePosition-1].getElementsByClassName.display = "block";
     circles[slidePosition-1].className += "enable";
 
     var slidePosition = 0;
@@ -37,6 +37,6 @@ function SlideShow(n) {
         slidePosition++;
         if (slidePosition > slides.length) {slidePosition = 1}
         slides[slidePosition-1].style.display = "block";
-        setTimeout(SlideShpw,2000);
+        setTimeout(SlideShow,2000);
     }
 }
