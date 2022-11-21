@@ -3,7 +3,6 @@
 box-sizing: border-box;
 margin: 0;
 padding: 0;
-background-color: #24252a;
 }
 li, a, button {
 
@@ -39,14 +38,6 @@ header {
     color: aqua;
 }
 
-button {
-    padding: 9px 25px;
-    background-color: aqua;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-}
 
 button:hover{
     background-color: #555;
@@ -158,4 +149,27 @@ a{
 .logo{
 height: 600px;
 width: 185ch;
+}
+
+.buynow{
+    border: 1px solid #184d47;
+    background: #184d47;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top:10px ;
+    color: white;
+}
+.buynow:hover{
+    border: 1px solid #5b8c5a;
+    box-shadow: 0 0 10px 5px #5b8c5a inset;
+}
+
+.cart{
+    width: 250px;
+    float: right;
+    text-align: center;
+    border: 1px solid black;
+    overflow-y: scroll;
+    height: 100%;
 }
