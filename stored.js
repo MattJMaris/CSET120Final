@@ -1,11 +1,11 @@
-function passwordHide() {
-    var x = document.getElementById("placeholder");
-    if (x.type === "password") {
-        x.type = "text";
-    } else {
-        x.type = "password"
-    }
-}
+// function passwordHide() {
+//     var x = document.getElementById("placeholder");
+//     if (x.type === "password") {
+//         x.type = "text";
+//     } else {
+//         x.type = "password"
+//     }
+// }
 
 var inputKey = document.getElementById("inputKey");
 var inputValue = document.getElementById("inputValue");
