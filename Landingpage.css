@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Monsterrat:500');
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+background-color: #24252a;
+}
+li, a, button {
+
+    font-family:"Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+
+.head{
+    list-style: none;
+}
+
+.head li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.head li a{
+    transition: all ;
+}
+
+.head li a:hover {
+    color: aqua;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: aqua;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: #555;
+}
+
+.parallax {
+    background-image: url('');
+    height: max-content;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-title {
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+    padding: 50px;
+    font-variant: small-caps;
+    font-size: 100px;
+    font-family: fantasy;
+    letter-spacing: 20px;
+}
+
+#sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.menu {
+    background: #184d47;
+    text-align: center;
+}
+
+.menu-ul {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.menu-ul li {
+    font-size: 17px;
+    list-style: none;
+    display: inline-block;
+    padding: 25px 25px 26px 25px;
+}
+
+.a-menu {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-ul li:hover{
+    background: #5b8c5a;
+    transform:scale(1.1);
+}
+
+.search-box{
+    border: 1px solid white;
+    border-radius: 50px;
+    background: white;
+    width: max-content;
+    display: inline-block;
+    margin: 8px;
+}
+
+.search-box:hover{
+    box-shadow:0 0 10px 2px #5b8c5a;
+    border: 1px solid;
+}
+
+.search-input{
+    width:250px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+    margin: 15px 0 0 10px;
+}
+.catagories{
+    width: max-content;
+    margin: 25px;
+    border: 1px solid #184d47;
+    border-radius: 0 0 50px 50px;
+    display:inline-block ;
+}
+.catagories:hover{
+    box-shadow: 0 0 10px 3px #184d47;
+}
+
+.item-image{
+    height: 200px;
+    width: 200px;
+    border-radius: 0 0 50px 50px;
+    padding: 10px;
+}
+.image-title{
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+height: 600px;
+width: 185ch;
+}
