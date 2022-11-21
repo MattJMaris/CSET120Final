@@ -3,9 +3,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>daily deals</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     
+    <div class="boxlog">
+
+        <div class="slideshow-container fade">
+        <div class="containers">
+            <div class="messageInfo">1/3</div>
+            <img src="img/breadstick.jpeg" style="width:50%">
+            <div class="Info">first caption</div>
+        </div>
+
+        <div class="containers">
+            <div class="messageInfo">2/3</div>
+            <img src="img/Baccalà.png" style="width:50%">
+            <div class="Info">second caption</div>
+        </div>
+
+        <div class="containers">
+            <div class="messageInfo">2/3</div>
+            <img src="img/spaghetti.jpg" style="width:50%">
+            <div class="Info">third caption</div>
+        </div>
+
+        <a class="back" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center;">
+    <span class="dots" onclick="currentSlide(1)"></span>
+    <span class="dots" onclick="currentSlide(2)"></span>
+    <span class="dots" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
+    <script src="specialDealsJs.js"></script>
 </body>
 </html>
