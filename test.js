@@ -1,3 +1,4 @@
+
 const cartIcon = document.querySelector('placeholder')
 const wholeCartWindow = document.querySelector('.whole-cart-window')
 wholeCartWindow.inWindow = 0
