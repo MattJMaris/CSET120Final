@@ -44,7 +44,7 @@ button:hover{
 }
 
 .parallax {
-    background-image: url('');
+    background-image: url('https://virtualbackgrounds.site/wp-content/uploads/2020/07/super-mario-bros-level-ending.jpg');
     height: max-content;
     background-attachment: fixed;
     background-position: center;
@@ -136,6 +136,12 @@ button:hover{
     border-radius: 0 0 50px 50px;
     padding: 10px;
 }
+
+.item-image size{
+    height: 200px;
+    width: 300px;
+    padding: 5px;
+}
 .image-title{
     text-align: center;
     padding: 10px;
@@ -172,4 +178,48 @@ width: 185ch;
     border: 1px solid black;
     overflow-y: scroll;
     height: 100%;
+}
+.parallaxl{
+    background-image: url();
+}
+.footer{
+    background:rgba(0, 0, 0, 0.5) ;
+    text-align: center;
+    padding: 20px;
+}
+.links{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    min-width: 30%;
+}
+.links ul{
+    padding: 0;
+}
+.links li{
+    list-style: none;
+    font-weight: 300;
+    
+}
+.linksa{
+    color: #fd5e53;
+}
+.copyrights{
+    font-size: 16px;
+    font-family: verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 15px;
+}
+
+b {
+width: 300in;
+}
+.parallaxX {
+    background-image: url('https://i.kym-cdn.com/photos/images/newsfeed/000/186/610/thankyou.png?1318726198');
+    height: max-content;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
