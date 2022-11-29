@@ -21,16 +21,16 @@ header {
 }
 
 
-.head{
+.head {
     list-style: none;
 }
 
-.head li{
+.head li {
     display: inline-block;
     padding: 0px 20px;
 }
 
-.head li a{
+.head li a {
     transition: all ;
 }
 
@@ -39,7 +39,7 @@ header {
 }
 
 
-button:hover{
+button:hover {
     background-color: #555;
 }
 
@@ -92,12 +92,12 @@ button:hover{
     color: white;
 }
 
-.menu-ul li:hover{
+.menu-ul li:hover {
     background: #5b8c5a;
     transform:scale(1.1);
 }
 
-.search-box{
+.search-box {
     border: 1px solid white;
     border-radius: 50px;
     background: white;
@@ -106,12 +106,12 @@ button:hover{
     margin: 8px;
 }
 
-.search-box:hover{
+.search-box:hover {
     box-shadow:0 0 10px 2px #5b8c5a;
     border: 1px solid;
 }
 
-.search-input{
+.search-input {
     width:250px;
     border: none;
     font-size: 16px;
@@ -119,45 +119,45 @@ button:hover{
     background: transparent;
     margin: 15px 0 0 10px;
 }
-.catagories{
+.catagories {
     width: max-content;
     margin: 25px;
     border: 1px solid #184d47;
     border-radius: 0 0 50px 50px;
     display:inline-block ;
 }
-.catagories:hover{
+.catagories:hover {
     box-shadow: 0 0 10px 3px #184d47;
 }
 
-.item-image{
+.item-image {
     height: 200px;
     width: 200px;
     border-radius: 0 0 50px 50px;
     padding: 10px;
 }
 
-.item-image size{
+.item-image size {
     height: 200px;
     width: 300px;
     padding: 5px;
 }
-.image-title{
+.image-title {
     text-align: center;
     padding: 10px;
     font-weight: bold;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.logo{
+.logo {
 height: 600px;
 width: 185ch;
 }
 
-.buynow{
+.shop-item-button {
     border: 1px solid #184d47;
     background: #184d47;
     padding: 5px 15px;
@@ -166,12 +166,12 @@ width: 185ch;
     margin-top:10px ;
     color: white;
 }
-.buynow:hover{
+.shop-item-button:hover{
     border: 1px solid #5b8c5a;
     box-shadow: 0 0 10px 5px #5b8c5a inset;
 }
 
-.cart{
+.cart {
     width: 250px;
     float: right;
     text-align: center;
@@ -179,33 +179,33 @@ width: 185ch;
     overflow-y: scroll;
     height: 100%;
 }
-.parallaxl{
+.parallaxl {
     background-image: url();
 }
-.footer{
+.footer {
     background:rgba(0, 0, 0, 0.5) ;
     text-align: center;
     padding: 20px;
 }
-.links{
+.links {
     color: white;
     font-size: 20px;
     font-weight: bold;
     display: inline-block;
     min-width: 30%;
 }
-.links ul{
+.links ul {
     padding: 0;
 }
-.links li{
+.links li {
     list-style: none;
     font-weight: 300;
     
 }
-.linksa{
+.linksa {
     color: #fd5e53;
 }
-.copyrights{
+.copyrights {
     font-size: 16px;
     font-family: verdana, Arial, Helvetica, sans-serif;
     text-align: center;
