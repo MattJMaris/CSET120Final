@@ -67,6 +67,7 @@ a:link:hover{
 
 /*the special deals page css*/
 
+
 .slideshow-container{
     max-width: 1000px;
     position: relative;
@@ -84,17 +85,24 @@ a:link:hover{
     width:auto;
     margin-top: -23px;
     padding:17px;
-    color:grey;
+    color:white;
     font-weight:bold;
     font-size: 19px;
     transition: 0.4s ease;
-    border-radius: 0 5px 5px 0;
+    border-radius: 10px;
     user-select:none;
+}
+
+.back{
+    left:0;
+    border-radius: 10px;
+    margin-left: 17%;
 }
 
 .forward{
     right:0;
-    border-radius: 4px 0 0 4px;
+    border-radius: 10px;
+    margin-right: 17%;
 }
 
 .back:hover, .forward:hover{
@@ -149,4 +157,18 @@ a:link:hover{
 @keyframes fade {
     from {opacity: .5;}
     to {opacity: 2;}
+}
+
+.boxlog{
+    margin:0 auto;
+    font-weight: larger;
+    color:white;
+    background-color: rgb(0, 0, 0,0.7);
+    border-radius: 25px;
+    padding: 20px;
+    width: 50%;
+}
+
+.boxlog img {
+    border-radius: 25px;
 }
