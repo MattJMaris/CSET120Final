@@ -4,6 +4,7 @@ box-sizing: border-box;
 margin: 0;
 padding: 0;
 }
+
 li, a, button {
 
     font-family:"Montserrat", sans-serif;
@@ -50,6 +51,7 @@ button:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    width: 240ch;
 }
 
 .page-title {
@@ -119,21 +121,33 @@ button:hover {
     background: transparent;
     margin: 15px 0 0 10px;
 }
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
 .catagories {
-    width: max-content;
+    width: 220px;
     margin: 25px;
-    border: 1px solid #184d47;
-    border-radius: 0 0 50px 50px;
+    border: 1.5px solid #184d47;
+    border-radius: 50px 50px 50px 50px;
     display:inline-block ;
+    padding: 12px;
+    text-align: center;
+    height: 330px;
 }
-.catagories:hover {
+
+/* .catagories:hover {
     box-shadow: 0 0 10px 3px #184d47;
-}
+} */
 
 .item-image {
     height: 200px;
     width: 200px;
-    border-radius: 0 0 50px 50px;
+    border-radius: 50px 50px 50px 50px;
     padding: 10px;
 }
 
@@ -154,7 +168,7 @@ a {
 
 .logo {
 height: 600px;
-width: 185ch;
+width: 240ch;
 }
 
 .shop-item-button {
