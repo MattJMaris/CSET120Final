@@ -12,7 +12,7 @@ html{
 /*code below is for the login page.*/
 
 /*the whole login section including the input boxes and such*/
-.logbox{
+.logbox {
     margin: 20%;
     font-weight: larger;
     color:white;
@@ -21,31 +21,31 @@ html{
 }
 
 /*user,pass,email,button styling*/
-#username{
+#username {
     border-radius: 25px;
     border: solid black 1px;
     background-image: none;
 }
 
-#password{
+#password {
     border-radius: 25px;
     border: solid black 1px;
     background-image: none;
 }
 
-#email{
+#email {
     border-radius: 25px;
     border: solid black 1px;
     background-image: none;
 }
 
-#login-button{
+#login-button {
     border-radius: 25px;
     border: solid black 1px;
     background-image: none;
 }
 
-#password-reset{
+#password-reset {
     background-image: none;
 }
 
