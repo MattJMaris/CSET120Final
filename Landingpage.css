@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Monsterrat:500');
 * {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 li, a, button {
-
     font-family:"Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -20,7 +19,6 @@ header {
     align-items: center;
     padding: 30px 10%;
 }
-
 
 .head {
     list-style: none;
@@ -95,8 +93,7 @@ button:hover {
 }
 
 .menu-ul li:hover {
-    background: #5b8c5a;
-    transform:scale(1.1);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .search-box {
@@ -132,7 +129,7 @@ button:hover {
 .catagories {
     width: 240px;
     margin: 25px;
-    border: 1.5px solid #184d47;
+    border: 1.5px solid #515ec1;
     border-radius: 50px 50px 50px 50px;
     display:inline-block ;
     padding: 12px;
@@ -172,8 +169,8 @@ width: 240ch;
 }
 
 .shop-item-button {
-    border: 1px solid #184d47;
-    background: #184d47;
+    border: 1px solid #515ec1;
+    background: #515ec1;
     padding: 5px 15px;
     border-radius: 20px;
     font-weight: bold;
@@ -181,8 +178,7 @@ width: 240ch;
     color: white;
 }
 .shop-item-button:hover{
-    border: 1px solid #5b8c5a;
-    box-shadow: 0 0 10px 5px #5b8c5a inset;
+    background-color:#3c458d;
 }
 
 .cart {
@@ -209,7 +205,7 @@ width: 240ch;
     background-image: url();
 }
 .footer {
-    background:rgba(0, 0, 0, 0.5) ;
+    background:#515ec1;
     text-align: center;
     padding: 20px;
 }
@@ -229,8 +225,12 @@ width: 240ch;
     
 }
 .linksa {
-    color: #fd5e53;
+    color: white;
 }
+.linksa:hover {
+    color:black;
+}
+
 .copyrights {
     font-size: 16px;
     font-family: verdana, Arial, Helvetica, sans-serif;
@@ -248,4 +248,14 @@ width: 300in;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.parallaxX button {
+    background-color: #515ec1;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.parallaxX button:hover {
+   color:  rgba(0, 0, 0, 0.5);
 }

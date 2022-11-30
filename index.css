@@ -12,7 +12,7 @@ html{
 /*code below is for the login page.*/
 
 /*the whole login section including the input boxes and such*/
-.logbox{
+.logbox {
     margin: 20%;
     font-weight: larger;
     color:white;
@@ -21,31 +21,31 @@ html{
 }
 
 /*user,pass,email,button styling*/
-#username{
+#username {
     border-radius: 25px;
     border: solid black 1px;
     background-image: none;
 }
 
-#password{
+#password {
     border-radius: 25px;
     border: solid black 1px;
     background-image: none;
 }
 
-#email{
+#email {
     border-radius: 25px;
     border: solid black 1px;
     background-image: none;
 }
 
-#login-button{
+#login-button {
     border-radius: 25px;
     border: solid black 1px;
     background-image: none;
 }
 
-#password-reset{
+#password-reset {
     background-image: none;
 }
 
@@ -162,18 +162,43 @@ a:link:hover{
 }
 
 .boxlog{
+    border-radius: 25px;
     margin:0 auto;
     font-weight: larger;
     color:white;
     background-color: rgb(0, 0, 0,0.7);
-    border-radius: 25px;
     padding: 20px;
     width: 50%;
 }
 
-.boxlog img {
+.boxlog button{
+     border-radius: 25px;
+     border: none;
+}
+
+#inputKey {
     border-radius: 25px;
 }
+
+#inputValue {
+    border-radius: 25px;
+}
+
+#inputValue2 {
+    border-radius: 25px;
+    margin-top: 7px;
+}
+
+#btnInsert {
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#btnInsert2 {
+    padding: 5px;
+    margin-top: 10px;
+}
+
 
 .boxlog{
     margin-top: 150px;
