@@ -166,13 +166,27 @@ a:link:hover{
     font-weight: larger;
     color:white;
     background-color: rgb(0, 0, 0,0.7);
-    border-radius: 25px;
     padding: 20px;
     width: 50%;
 }
 
-.boxlog img {
+.boxlog button{
+     border-radius: 25px;
+     border: none;
+}
+
+#inputValue {
     border-radius: 25px;
+}
+
+#inputValue2 {
+    border-radius: 25px;
+    margin-top: 7px;
+}
+
+#btnInsert {
+    padding: 5px;
+    margin-top: 10px;
 }
 
 .boxlog{
