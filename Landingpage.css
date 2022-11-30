@@ -21,7 +21,6 @@ header {
     padding: 30px 10%;
 }
 
-
 .head {
     list-style: none;
 }
@@ -217,7 +216,7 @@ width: 240ch;
     
 }
 .linksa {
-    color: #fd5e53;
+    color: black;
 }
 .copyrights {
     font-size: 16px;
