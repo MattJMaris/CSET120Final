@@ -162,6 +162,7 @@ a:link:hover{
 }
 
 .boxlog{
+    border-radius: 25px;
     margin:0 auto;
     font-weight: larger;
     color:white;
@@ -173,6 +174,10 @@ a:link:hover{
 .boxlog button{
      border-radius: 25px;
      border: none;
+}
+
+#inputKey {
+    border-radius: 25px;
 }
 
 #inputValue {
@@ -188,6 +193,12 @@ a:link:hover{
     padding: 5px;
     margin-top: 10px;
 }
+
+#btnInsert2 {
+    padding: 5px;
+    margin-top: 10px;
+}
+
 
 .boxlog{
     margin-top: 150px;
