@@ -19,7 +19,7 @@ function ManagerLog(){
         
             if (key && value) {
                 localStorage.setItem(key, value);
-                location.href = "http://127.0.0.1:5500/CSET120Final/manager-landing.html"; 
+                location.href = "http://127.0.0.1:5501/manager-landing.html"; 
             }
         };
     })
