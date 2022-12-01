@@ -369,3 +369,16 @@ width: 300in;
     margin: 40px auto 80px auto;
     font-size: 1.75em;
 }
+.removeButton {
+    border: 1px solid #515ec1;
+    background: #515ec1;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top:5px ;
+    color: white;
+    padding: 5px;
+}
+
+.removeButton:hover {
+    background-color:#3c458d;
+}
