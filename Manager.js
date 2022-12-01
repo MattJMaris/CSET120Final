@@ -1,15 +1,17 @@
-function ManagerLog()
-    loginButton.addEventListener("click", (e) => {
+function ManagerLog(){
+
+     let btnInsert = document.getElementById("btnInsert")
+    btnInsert.addEventListener("click", (e) => {
         e.preventDefault();
     let username ="Manager1"
     let password = "Manager1"
         inputUser = document.querySelector('inputKey')
-        inputpass = document.querySelector('inputValue')
-        if (inputeUser === "username" || inputpass === "password") {
-            document.querySelector('messageDetails').innerHTML = "Username and Password do not match. <br>Please try again."
+        inputPass = document.querySelector('inputValue')
+        if (inputUser === "Eli" || inputPass === "password") {
+            alert("Username and Password do not match. <br>Please try again.")
         }
-        if (inputeUser === "Manager1" && inputpass === "Manager1") {
-            document.querySelector('messageDetails').innerHTML = "Success! <br>You are now signin"
+        if (inputUser === username && inputPass === password) {
+            alert("Success! <br>You are now signin")
         }
         btnInsert.onclick = function() {
             var key = inputKey.value;
@@ -17,7 +19,9 @@ function ManagerLog()
         
             if (key && value) {
                 localStorage.setItem(key, value);
-                location.href = ""; 
+                location.href = "http://127.0.0.1:5500/CSET120Final/manager-landing.html"; 
             }
         };
     })
+}
+    window.onload = ManagerLog
