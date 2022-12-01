@@ -1,8 +1,8 @@
 function ManagerLog()
     loginButton.addEventListener("click", (e) => {
         e.preventDefault();
-    let username ="Bowser"
-    let password = "peach"
+    let username ="Manager1"
+    let password = "Manager1"
         inputUser = document.querySelector('inputKey')
         inputpass = document.querySelector('inputValue')
         if (inputeUser === "username" || inputpass === "password") {
