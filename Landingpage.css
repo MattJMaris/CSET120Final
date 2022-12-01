@@ -247,3 +247,17 @@ width: 300in;
 .parallaxX button:hover {
    color:  rgba(0, 0, 0, 0.5);
 }
+
+.removeButton {
+    border: 1px solid #515ec1;
+    background: #515ec1;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-top:5px ;
+    color: white;
+    padding: 5px;
+}
+
+.removeButton:hover {
+    background-color:#3c458d;
+}
