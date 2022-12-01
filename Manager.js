@@ -8,7 +8,7 @@ function ManagerLog()
         if (inputeUser === "username" || inputpass === "password") {
             document.querySelector('messageDetails').innerHTML = "Username and Password do not match. <br>Please try again."
         }
-        if (inputeUser === "username" && inputpass === "password") {
+        if (inputeUser === "Manager1" && inputpass === "Manager1") {
             document.querySelector('messageDetails').innerHTML = "Success! <br>You are now signin"
         }
         btnInsert.onclick = function() {
