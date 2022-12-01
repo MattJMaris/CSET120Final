@@ -72,7 +72,7 @@ button:hover {
 }
 
 .menu {
-    background: #184d47;
+    background: #515ec1/*#414b9c*/;
     text-align: center;
 }
 
@@ -129,8 +129,16 @@ button:hover {
 }
 
 
+
+.categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
 .catagories {
-    width: 220px;
+    width: 240px;
     margin: 25px;
     border: 1.5px solid #184d47;
     border-radius: 50px 50px 50px 50px;
@@ -147,6 +155,7 @@ button:hover {
 .item-image {
     height: 200px;
     width: 200px;
+    border-radius: 50px 50px 50px 50px;
     border-radius: 50px 50px 50px 50px;
     padding: 10px;
 }
@@ -191,8 +200,20 @@ width: 240ch;
     text-align: center;
     border: 1px solid black;
     overflow-y: scroll;
-    height: 100%;
+    height: 164%;
 }
+
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
 .parallaxl {
     background-image: url();
 }
