@@ -134,7 +134,7 @@ button:hover {
 }
 
 
-.catagories {
+.shop-item {
     width: 240px;
     margin: 25px;
     border: 1.5px solid #515ec1;
@@ -149,7 +149,7 @@ button:hover {
     box-shadow: 0 0 10px 3px #184d47;
 } */
 
-.item-image {
+.shop-item-image {
     height: 200px;
     width: 200px;
     border-radius: 50px 50px 50px 50px;
@@ -157,12 +157,12 @@ button:hover {
     padding: 10px;
 }
 
-.item-image size {
+.shop-item-image size {
     height: 200px;
     width: 300px;
     padding: 5px;
 }
-.image-title {
+.shop-image-title {
     text-align: center;
     padding: 10px;
     font-weight: bold;
@@ -247,8 +247,9 @@ width: 240ch;
     margin: 15px;
 }
 
-b {
+.shop-item-price {
 width: 300in;
+font-weight: bold;
 }
 .parallaxX {
     background-image: url('https://i.kym-cdn.com/photos/images/newsfeed/000/186/610/thankyou.png?1318726198');
