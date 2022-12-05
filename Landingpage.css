@@ -249,6 +249,7 @@ width: 240ch;
 
 .shop-item-price {
     width: 300in;
+    font-size: 20px;
     font-weight: bold;
 }
 .parallaxX {
@@ -382,4 +383,9 @@ width: 240ch;
 
 .removeButton:hover {
     background-color:#3c458d;
+}
+
+.shop-item-title {
+    font-size: 18px;
+    font-weight: bold;
 }
