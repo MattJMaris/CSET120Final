@@ -1,11 +1,3 @@
-// function passwordHide() {
-//     var x = document.getElementById("placeholder");
-//     if (x.type === "password") {
-//         x.type = "text";
-//     } else {
-//         x.type = "password"
-//     }
-// }
 
 var inputKey = document.getElementById("inputKey");
 var inputValue = document.getElementById("inputValue");
@@ -19,7 +11,7 @@ btnInsert.onclick = function() {
 
     if (key && value) {
         localStorage.setItem(key, value);
-        location.href = "http://127.0.0.1:5500/Landingpage.HTML"; 
+        location.href = "http://127.0.0.1:5501/Landingpage.HTML"; 
     }
 };
 
@@ -29,6 +21,3 @@ for (let i=0; i<localStorage.length; i++) {
 
     lsOutput.innerHTML += `${key}<br/>`;
 };
-
-//Need to make location.reload() take you to the landingPage
-

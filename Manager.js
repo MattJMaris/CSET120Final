@@ -12,7 +12,7 @@ function ManagerLog(){
             // location.href = "http://127.0.0.1:5500/CSET120Final/manager-landing.html";
         }
         else if(inputUser === username && inputPass === password) {
-            alert("Success! <br>You are now signin")
+            alert("Success! You are now signed in")
             location.href = "http://127.0.0.1:5500/CSET120Final/manager-landing.html";
         }
         else { alert("wrong info loser")
