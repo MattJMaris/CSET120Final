@@ -389,3 +389,13 @@ width: 240ch;
     font-size: 18px;
     font-weight: bold;
 }
+
+.checkout {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.chkLink {
+    color: black;
+}
