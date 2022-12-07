@@ -2,30 +2,26 @@
 // The 'then' method returns that promise as a response.
 //A second promise is made with the return response.json().
 
-fetch("Products.JSON")
-.then(function(response) {
-    return response.json();
-})
-
-
 //This fulfills the previous promise as a response.
 //Stores the items as a string data type.
 //Creates an array for the 'cart' and checks if the cart exists.
 //If the cart doesn't exist, it will create a cart.
 
-.then(function(data) {
-    localStorage.setItem("products", JSON.stringify(data));
-    if (!localStorage.getItem("shopCart")) {
-        localStorage.setItem("shopCart", "[]");
-    }
+fetch("products.json")
+.then(function(response){
+   return response.json();
+})
+.then(function(data){
+   localStorage.setItem("products", JSON.stringify(data));
+   if(!localStorage.getItem("cart")){
+      localStorage.setItem("cart", "[]");
+   }
 });
 
-//Global Variables From Inside the Function
+//Global Variables to Access From Inside the Function
+let product = JSON.parse(localStorage.getItem("product"));
+let cart = JSON.parse(localStorage.getItem("cart"));
 
-//Holds all the products from localStorage
-let products = JSON.parse(localStorage.getItem("products"));
-//Holds all the product values stored in the cart
-let cart = JSON.parse(localStorage,getItem("shopCart"));
 
 //Adds a product to the cart
 //Finds the product id to match it with out 'productID and if found, 
@@ -40,19 +36,55 @@ let cart = JSON.parse(localStorage,getItem("shopCart"));
 //Sets the cart back in the localStorage and overrides the old values
 //with new values ones
 
-function addItemToCart(productID) {
-    let product = products.find(function(product) {
-        return product.id == productID;
+function addItemToCart(productId){
+    let product = product.find(function(item){
+       return item.id == productId;
     });
-    if(shopCart.length == 0) {
-        shopCart.push(product);
-    } else {
-        let res = shopCart.find(element => element.id == productID)
-        if (res === undefined) {
-            shopCart.push(product);
-        }
+  
+    if(cart.length == 0){
+       cart.push(product);
+    }else{
+       let res = cart.find(element => element.id == productId);
+       if(res === undefined){
+          cart.push(product);
+       }
     }
-    localStorage.setItem("shopCart", JSON.stringify(shopCart));
+    localStorage.setItem("cart", JSON.stringify(cart));
+ }
+ addItemToCart(1);
+
+//Remove Products from the Cart
+
+function removeItemFromCart(productId){
+    let tempCart = cart.filter(item => item.id != productId);
+    localStorage.setItem("cart", JSON.stringify(tempCart));
+ }
+ removeItemFromCart(1);
+
+//Update Function for Product Quantity
+
+function updateQuantity(productId, quantity){
+    for(let product of cart){
+       if(product.id == productId){
+          product.quantity = quantity;
+       }
+    }
+    localStorage.setItem("cart", JSON.stringify(cart));
+ }
+ updateQuantity(1, 8);
+
+//Get Cart Total Price
+
+function getTotal() {
+    let tempCart = cart.map(function(item) {
+        return parseFloat(item.price);
+    });
+
+    let sum = tempCart.reduce(function(prev, next) {
+        return prev + next;
+    }, 0);
+
+    console.log(sum);
 }
 
-addItemToCart(1);
+getTotal(0);
