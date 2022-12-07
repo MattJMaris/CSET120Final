@@ -56,8 +56,8 @@ function addItemToCart(productId){
 //Remove Products from the Cart
 
 function removeItemFromCart(productId){
-    let tempCart = cart.filter(item => item.id != productId);
-    localStorage.setItem("cart", JSON.stringify(tempCart));
+    let cart = cart.filter(item => item.id != productId);
+    localStorage.setItem("cart", JSON.stringify(cart));
  }
  removeItemFromCart(1);
 
