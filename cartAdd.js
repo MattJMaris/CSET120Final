@@ -100,3 +100,14 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
 }
+
+var cartRow = [];
+localStorage.setItem("cartRow", JSON.stringify(cartRow));
+var retrievedCart = localStorage.getItem('cartRow');
+console.log('retrievedCart: ', JSON.parse(retrievedCart));
+
+
+var testObject = { 'one': 1, 'two': 2, 'three': 3 };
+localStorage.setItem('testObject', JSON.stringify(testObject));
+var retrievedObject = localStorage.getItem('testObject');
+console.log('retrievedObject: ', JSON.parse(retrievedObject));
