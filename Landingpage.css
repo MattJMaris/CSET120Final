@@ -248,8 +248,9 @@ width: 240ch;
 }
 
 .shop-item-price {
-width: 300in;
-font-weight: bold;
+    width: 300in;
+    font-size: 20px;
+    font-weight: bold;
 }
 .parallaxX {
     background-image: url('https://i.kym-cdn.com/photos/images/newsfeed/000/186/610/thankyou.png?1318726198');
@@ -382,4 +383,19 @@ font-weight: bold;
 
 .removeButton:hover {
     background-color:#3c458d;
+}
+
+.shop-item-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.checkout {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.chkLink {
+    color: black;
 }

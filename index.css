@@ -1,205 +1,205 @@
 * {
- text-align: center;
- font-family: 'Allerta Stencil', sans-serif;
- font-family: 'Lobster', cursive;
-}
-
-html{
-    background-image: url('img/spaghetti.jpg');
-    background-repeat: none;
-    background-size: 100% 800px;
-}
-/*code below is for the login page.*/
-
-/*the whole login section including the input boxes and such*/
-.logbox {
-    margin: 20%;
-    font-weight: larger;
-    color:white;
-    background-color: rgb(0, 0, 0,0.7);
-    border-radius: 25px;
-}
-
-/*user,pass,email,button styling*/
-#username {
-    border-radius: 25px;
-    border: solid black 1px;
-    background-image: none;
-}
-
-#password {
-    border-radius: 25px;
-    border: solid black 1px;
-    background-image: none;
-}
-
-#email {
-    border-radius: 25px;
-    border: solid black 1px;
-    background-image: none;
-}
-
-#login-button {
-    border-radius: 25px;
-    border: solid black 1px;
-    background-image: none;
-}
-
-#password-reset {
-    background-image: none;
-}
-
-#create-acc{
-    background-image: none;
-    background-repeat: none;
-}
-/*link styling*/
-
-a:link{
-    text-decoration: none;
-    color:white;
-    background-image: none;
-}
-
-a:link:hover{
-    text-decoration: underline white 3px;
-}
-
-/*the special deals page css*/
-
-
-.slideshow-container{
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-
-.containers{
-    display: none;
-}
-
-.back, .forward {
-    cursor: pointer;
-    position:absolute;
-    top:48%;
-    width:auto;
-    margin-top: -23px;
-    padding:17px;
-    color:white;
-    font-weight:bold;
-    font-size: 19px;
-    transition: 0.4s ease;
-    border-radius: 10px;
-    user-select:none;
-}
-
-.back{
-    left:0;
-    border-radius: 10px;
-    margin-left: 17%;
-}
-
-.forward{
-    right:0;
-    border-radius: 10px;
-    margin-right: 17%;
-}
-
-.back:hover, .forward:hover{
-    background-color: rgba(0,0,0,0.8);
-}
-
-.info{
-    color: #e3e3e3;
-    font-size:16px;
-    font-family: 'Allerta Stencil',sans-serif;
-    padding:10px 14px;
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
     text-align: center;
-}
-
-.messageInfo{
-    color: #f2f2f2;
-    font-size:14px;
-    font-family: 'Allerta Stencil',sans-serif;
-    padding: 10px 14px;
-    position: absolute;
-    top:0;
-}
-
-.dots{
-    cursor:pointer;
-    height: 16px;
-    width:16px;
-    margin:0 3px;
-    background-color: white;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.5s ease;
-}
-
-.enable, .dots:hover {
-    background-color: #717161;
-}
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.4s;
-    animation-name: fade;
-    animation-duration: 1.4s;
-}
-
-@-webkit-keyframes fade{
-    from {opacity: .5;}
-    to {opacity: 2;}
-}
-
-@keyframes fade {
-    from {opacity: .5;}
-    to {opacity: 2;}
-}
-
-.boxlog{
-    border-radius: 25px;
-    margin:0 auto;
-    font-weight: larger;
-    color:white;
-    background-color: rgb(0, 0, 0,0.7);
-    padding: 20px;
-    width: 50%;
-}
-
-.boxlog button{
-     border-radius: 25px;
-     border: none;
-}
-
-#inputKey {
-    border-radius: 25px;
-}
-
-#inputValue {
-    border-radius: 25px;
-}
-
-#inputValue2 {
-    border-radius: 25px;
-    margin-top: 7px;
-}
-
-#btnInsert {
-    padding: 5px;
-    margin-top: 10px;
-}
-
-#btnInsert2 {
-    padding: 5px;
-    margin-top: 10px;
-}
-
-
-.boxlog{
-    margin-top: 150px;
-}
+    font-family: 'Allerta Stencil', sans-serif;
+    font-family: 'Lobster', cursive;
+   }
+   
+   html{
+       background-image: url('img/spaghetti.jpg');
+       background-repeat: none;
+       background-size: 100% 800px;
+   }
+   /*code below is for the login page.*/
+   
+   /*the whole login section including the input boxes and such*/
+   .logbox {
+       margin: 20%;
+       font-weight: larger;
+       color:white;
+       background-color: rgb(0, 0, 0,0.7);
+       border-radius: 25px;
+   }
+   
+   /*user,pass,email,button styling*/
+   #username {
+       border-radius: 25px;
+       border: solid black 1px;
+       background-image: none;
+   }
+   
+   #password {
+       border-radius: 25px;
+       border: solid black 1px;
+       background-image: none;
+   }
+   
+   #email {
+       border-radius: 25px;
+       border: solid black 1px;
+       background-image: none;
+   }
+   
+   #login-button {
+       border-radius: 25px;
+       border: solid black 1px;
+       background-image: none;
+   }
+   
+   #password-reset {
+       background-image: none;
+   }
+   
+   #create-acc{
+       background-image: none;
+       background-repeat: none;
+   }
+   /*link styling*/
+   
+   a:link{
+       text-decoration: none;
+       color:white;
+       background-image: none;
+   }
+   
+   a:link:hover{
+       text-decoration: underline white 3px;
+   }
+   
+   /*the special deals page css*/
+   
+   
+   .slideshow-container{
+       max-width: 1000px;
+       position: relative;
+       margin: auto;
+   }
+   
+   .containers{
+       display: none;
+   }
+   
+   .back, .forward {
+       cursor: pointer;
+       position:absolute;
+       top:48%;
+       width:auto;
+       margin-top: -23px;
+       padding:17px;
+       color:white;
+       font-weight:bold;
+       font-size: 19px;
+       transition: 0.4s ease;
+       border-radius: 10px;
+       user-select:none;
+   }
+   
+   .back{
+       left:0;
+       border-radius: 10px;
+       margin-left: 17%;
+   }
+   
+   .forward{
+       right:0;
+       border-radius: 10px;
+       margin-right: 17%;
+   }
+   
+   .back:hover, .forward:hover{
+       background-color: rgba(0,0,0,0.8);
+   }
+   
+   .info{
+       color: #e3e3e3;
+       font-size:16px;
+       font-family: 'Allerta Stencil',sans-serif;
+       padding:10px 14px;
+       position: absolute;
+       bottom: 10px;
+       width: 100%;
+       text-align: center;
+   }
+   
+   .messageInfo{
+       color: #f2f2f2;
+       font-size:14px;
+       font-family: 'Allerta Stencil',sans-serif;
+       padding: 10px 14px;
+       position: absolute;
+       top:0;
+   }
+   
+   .dots{
+       cursor:pointer;
+       height: 16px;
+       width:16px;
+       margin:0 3px;
+       background-color: white;
+       border-radius: 50%;
+       display: inline-block;
+       transition: background-color 0.5s ease;
+   }
+   
+   .enable, .dots:hover {
+       background-color: #717161;
+   }
+   
+   .fade {
+       -webkit-animation-name: fade;
+       -webkit-animation-duration: 1.4s;
+       animation-name: fade;
+       animation-duration: 1.4s;
+   }
+   
+   @-webkit-keyframes fade{
+       from {opacity: .5;}
+       to {opacity: 2;}
+   }
+   
+   @keyframes fade {
+       from {opacity: .5;}
+       to {opacity: 2;}
+   }
+   
+   .boxlog{
+       border-radius: 25px;
+       margin:0 auto;
+       font-weight: larger;
+       color:white;
+       background-color: rgb(0, 0, 0,0.7);
+       padding: 20px;
+       width: 50%;
+   }
+   
+   .boxlog button{
+        border-radius: 25px;
+        border: none;
+   }
+   
+   #inputKey {
+       border-radius: 25px;
+   }
+   
+   #inputValue {
+       border-radius: 25px;
+   }
+   
+   #inputValue2 {
+       border-radius: 25px;
+       margin-top: 7px;
+   }
+   
+   #btnInsert {
+       padding: 5px;
+       margin-top: 10px;
+   }
+   
+   #btnInsert2 {
+       padding: 5px;
+       margin-top: 10px;
+   }
+   
+   
+   .boxlog{
+       margin-top: 150px;
+   }
