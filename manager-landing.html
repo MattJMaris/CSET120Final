@@ -40,9 +40,50 @@
 
         </div>
 
+        <form>
+            <label>
+              Item:
+              <input type="text" id="item-input" />
+            </label>
+            <button type="button" id="add-button">Add Item</button>
+          </form>
+          
+          <ul id="item-list">
+            <!-- items will be added here -->
+          </ul>
 
-
-
+          <script>
+            const addButton = document.getElementById('add-button');
+            const itemInput = document.getElementById('item-input');
+            const itemList = document.getElementById('item-list');
+          
+            // Function to add a new item to the list
+            function addItem() {
+              // Get the value of the input field
+              const itemValue = itemInput.value;
+          
+              // Create a new list item
+              const newItem = document.createElement('li');
+              newItem.innerHTML = itemValue;
+          
+              // Add a button to remove the item
+              const removeButton = document.createElement('button');
+              removeButton.innerHTML = 'Remove';
+              removeButton.addEventListener('click', () => {
+                itemList.removeChild(newItem);
+              });
+              newItem.appendChild(removeButton);
+          
+              // Add the new item to the list
+              itemList.appendChild(newItem);
+          
+              // Clear the input field
+              itemInput.value = '';
+            }
+          
+            // Add the item when the add button is clicked
+            addButton.addEventListener('click', addItem);
+          </script>
 
         <!-- <div class="categories">
             <div>
