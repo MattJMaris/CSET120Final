@@ -26,20 +26,39 @@ function removeFromMenu(id) {
     localStorage.setItem("foodItems", JSON.stringify(foodItems));
     renderManagerMenu();
 };
-const addNewMenuItemBtn = document.getElementById('addNewMenuItem');
-addNewMenuItemBtn.addEventListener('click', () => {
-    const name = document.getElementById('newItemName').value;
-    const price = document.getElementById('newItemPrice').value;
-    const description = document.getElementById('newItemDescription').value;
-    const image = document.getElementById('newItemImg').value;
-    const calories = document.getElementById('newItemCalories').value;
-    const id = document.getElementById('newItemId').value;
-    const id1 = parseInt(id)
-    for(let i = 0; i < foodItems.length; i++) {
-        if(foodItems[i].name === name) {
-            alert('Item already exists');
-            return;
-        }
+// Check if the form has been submitted
+document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+  
+    // Store the form data in variables
+    var addItem = document.querySelector('input[name="add_item"]').value;
+    var removeItem = document.querySelector('input[name="remove_item"]').value;
+  
+    // Check if the user is adding a food item
+    if (addItem) {
+      // Get the existing menu from local storage
+      var menu = localStorage.getItem('foodItems') ? JSON.parse(localStorage.getItem('foodItems')) : [];
+  
+      // Add the item to the menu
+      menu.push(addItem);
+  
+      // Save the updated menu to local storage
+      localStorage.setItem('foodItems', JSON.stringify(menu));
     }
-
+  
+    // Check if the user is removing a food item
+    if (removeItem) {
+      // Get the existing menu from local storage
+      var menu = localStorage.getItem('foodItems') ? JSON.parse(localStorage.getItem('foodItems')) : [];
+  
+      // Remove the item from the menu
+      var index = menu.indexOf(removeItem);
+      if (index > -1) {
+        menu.splice(index, 1);
+      }
+  
+      // Save the updated menu to local storage
+      localStorage.setItem('foodItems', JSON.stringify(menu));
+    }
+  });
   
