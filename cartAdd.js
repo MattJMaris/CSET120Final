@@ -1,4 +1,6 @@
 
+var foodItems = JSON.parse(localStorage.getItem('foodItems'))
+
 if (document.readyState == 'loading') {
     document.addEventListener('DOMContentLoaded', onStart)
 } else {
@@ -24,7 +26,7 @@ function onStart() {
         button.addEventListener('click', addToCartClicked)
     }
 
-    document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
+    // document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
 function removeCartItem(event) {
@@ -111,3 +113,26 @@ var testObject = { 'one': 1, 'two': 2, 'three': 3 };
 localStorage.setItem('testObject', JSON.stringify(testObject));
 var retrievedObject = localStorage.getItem('testObject');
 console.log('retrievedObject: ', JSON.parse(retrievedObject));
+
+let menulist = document.getElementById('menulist')
+console.log(menulist)
+function renderManagerMenu() {
+    console.log(menulist)
+    menulist.innerHTML="";
+    foodItems.forEach((foodItem) => {
+        menulist.innerHTML += `
+            <div class="menulist">
+                <div class="categories">
+                    <div class="shop-item">
+                        <img class="shop-item-image" src="${foodItem.image}" alt="">
+                        <h3 class="itemName">${foodItem.name}</h3>
+                        <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span> <br> 
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+            <div>
+        `;
+    });
+};
+renderManagerMenu()
