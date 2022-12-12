@@ -85,13 +85,17 @@ function quantityChanged(event) {
     updateCartTotal()
 }
 
-function AddtoCart(button){
-let item = button.parentElement.parentElement;
-let title = item.getElementsByClassName("itemName")[0].innerHTML
-let image = item.getElementsByClassName("shop-item-image")[0]
-let price = item.getElementsByClassName("shop-item-price")[0].innerHTML
-var everythingitem = {'title':title, 'image':image, 'price':price}
-localStorage.setItem('everythingitem', JSON.stringify(everythingitem));
+function AddtoCart(button) {
+    let item = button.parentElement.parentElement;
+    let title = item.getElementsByClassName("itemName")[0].innerHTML
+    let image = item.getElementsByClassName("shop-item-image")[0]
+    let price = item.getElementsByClassName("shop-item-price")[0].innerHTML
+    var everythingitem = {
+        'title':title, 
+        'image':image, 
+        'price':price
+    }
+    localStorage.setItem('everythingitem', JSON.stringify(everythingitem));
 }
 
 // function addToCartClicked(event) {

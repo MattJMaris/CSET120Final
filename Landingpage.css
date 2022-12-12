@@ -418,6 +418,7 @@ width: 240ch;
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 .form {
     border-style: solid;
     border-width: 2px;
@@ -451,4 +452,10 @@ width: 240ch;
 }
 #prices {
     margin: 5px;
+}
+
+.menuitem {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
