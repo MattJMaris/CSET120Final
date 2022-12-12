@@ -429,7 +429,7 @@ width: 240ch;
     text-align: center;
     height: 180px;
     justify-content: center;
-} */
+}
 
 #addNewMenuItemBtn {
     border: 1px solid #515ec1;
@@ -439,7 +439,6 @@ width: 240ch;
     margin-top:5px ;
     color: white;
     padding: 5px;
-    margin-bottom: 5px;
 }
 #id {
     margin: 5px;
