@@ -398,7 +398,17 @@ width: 240ch;
 
 .chkLink {
     color: black;
-<<<<<<< HEAD
 }
 
->>>>>>> 12edc553123909d650f5d53e55ac70670c8e0d21
+.formBox {
+    padding-top: 15px;
+    padding-left: 125px;
+    padding-bottom: 15px;
+}
+
+.changeBox {
+    margin-top: 15px;
+}
+.add-item-btn {
+    margin-top: 20px;
+}
