@@ -69,3 +69,8 @@ const appendMenuItems = () => {
     menulist.appendChild(newMenuItem1)
     renderManagerMenu();
 } 
+function removeFromMenu(id) {
+    foodItems = foodItems.filter( (foodItems) => foodItems.id !== id);
+    localStorage.setItem("foodItems", JSON.stringify(foodItems));
+    renderManagerMenu();
+};
