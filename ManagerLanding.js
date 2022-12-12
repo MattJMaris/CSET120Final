@@ -26,39 +26,53 @@ function removeFromMenu(id) {
     localStorage.setItem("foodItems", JSON.stringify(foodItems));
     renderManagerMenu();
 };
-// Check if the form has been submitted
-document.querySelector('form').addEventListener('submit', function(e) {
-    e.preventDefault();
-  
-    // Store the form data in variables
-    var addItem = document.querySelector('input[name="add_item"]').value;
-    var removeItem = document.querySelector('input[name="remove_item"]').value;
-  
-    // Check if the user is adding a food item
-    if (addItem) {
-      // Get the existing menu from local storage
-      var menu = localStorage.getItem('foodItems') ? JSON.parse(localStorage.getItem('foodItems')) : [];
-  
-      // Add the item to the menu
-      menu.push(addItem);
-  
-      // Save the updated menu to local storage
-      localStorage.setItem('foodItems', JSON.stringify(menu));
+const addNewMenuItemBtn = document.getElementById('addNewMenuItem');
+addNewMenuItemBtn.addEventListener('click', () => {
+    const name = document.getElementById('newItemName').value;
+    const price = document.getElementById('newItemPrice').value;
+    const description = document.getElementById('newItemDescription').value;
+    const image = document.getElementById('newItemImg').value;
+    const calories = document.getElementById('newItemCalories').value;
+    const id = document.getElementById('newItemId').value;
+    const id1 = parseInt(id)
+    for(let i = 0; i < foodItems.length; i++) {
+        if(foodItems[i].name === name) {
+            alert('Item already exists');
+            return;
+        }
     }
-  
-    // Check if the user is removing a food item
-    if (removeItem) {
-      // Get the existing menu from local storage
-      var menu = localStorage.getItem('foodItems') ? JSON.parse(localStorage.getItem('foodItems')) : [];
-  
-      // Remove the item from the menu
-      var index = menu.indexOf(removeItem);
-      if (index > -1) {
-        menu.splice(index, 1);
-      }
-  
-      // Save the updated menu to local storage
-      localStorage.setItem('foodItems', JSON.stringify(menu));
+    const newMenuItem = {
+        id:  id1,
+        image: image,     
+        name: name,
+        price: price,      
     }
-  });
-  
+    foodItems.push(newMenuItem)
+    localStorage.setItem('foodItems', JSON.stringify(foodItems))
+    appendMenuItems(newMenuItem)
+    renderManagerMenu();
+})
+const appendMenuItems = () => {
+    let menulist = document.querySelector('.menulist')
+    let id = document.getElementById('id').value; 
+    let image = document.getElementById('image').value;
+    let name = document.getElementById('name').value;
+    let price = document.getElementById('prices').value;
+    let newMenuItem1 = document.createElement('div')  
+    newMenuItem1.classList.add('menuItem')
+    newMenuItem1.innerHTML =  `
+    <ion-icon class="removeButton" onclick="removeFromMenu(${foodItems.id})" name="close-circle-outline"></ion-icon>
+    <img class="shop-item-image" src="${foodItems.image}" alt="">
+    <h3 class="itemName">${foodItems.name}</h3>
+    <div class="shop-item-details">
+    <span class="shop-item-price">$9.99</span> <br> 
+    <button class="btn btn-primary shop-item-button" type="button">Item back to cart</button>
+    `
+    menulist.appendChild(newMenuItem1)
+    renderManagerMenu();
+} 
+function removeFromMenu(id) {
+    foodItems = foodItems.filter( (foodItems) => foodItems.id !== id);
+    localStorage.setItem("foodItems", JSON.stringify(foodItems));
+    renderManagerMenu();
+};
