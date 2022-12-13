@@ -23,29 +23,29 @@
 
                 <div class="inputBox">
                     <span>full name :</span>
-                    <input type="text" placeholder="John Doe">
+                    <input type="text" placeholder="John Doe" required>
                 </div>
                 <div class="inputBox">
                     <span>email :</span>
-                    <input type="email" placeholder="example@example.com">
+                    <input type="email" placeholder="example@example.com" required>
                 </div>
                 <div class="inputBox">
                     <span>address :</span>
-                    <input type="text" placeholder="room - street - locality">
+                    <input type="text" placeholder="room - street - locality" required>
                 </div>
                 <div class="inputBox">
                     <span>city :</span>
-                    <input type="text" placeholder="City">
+                    <input type="text" placeholder="City" required>
                 </div>
 
                 <div class="flex">
                     <div class="inputBox">
                         <span>state :</span>
-                        <input type="text" placeholder="State">
+                        <input type="text" placeholder="State" required>
                     </div>
                     <div class="inputBox">
                         <span>zip code :</span>
-                        <input type="text" placeholder="12345">
+                        <input type="text" placeholder="12345" required>
                     </div>
                 </div>
 
@@ -60,26 +60,28 @@
                     <img src="img/card_img.png" alt="">
                 </div>
                 <div class="inputBox">
-                    <span>name on card :</span>
-                    <input type="text" placeholder="John Doe">
+                    <div class="NameCard">
+                        <span>name on card :</span>
+                        <input type="text" id="NameCard" placeholder="John Doe" required>
+                    </div>
                 </div>
                 <div class="inputBox">
                     <span>credit card number :</span>
-                    <input type="number" placeholder="1111-2222-3333-4444">
+                    <input type="number" placeholder="1111-2222-3333-4444" required>
                 </div>
                 <div class="inputBox">
                     <span>exp month :</span>
-                    <input type="text" placeholder="Month">
+                    <input type="text" placeholder="Month" required>
                 </div>
 
                 <div class="flex">
                     <div class="inputBox">
                         <span>exp year :</span>
-                        <input type="number" placeholder="Year">
+                        <input type="number" placeholder="Year" required>
                     </div>
                     <div class="inputBox">
                         <span>CVV :</span>
-                        <input type="text" placeholder="1234">
+                        <input type="text" placeholder="1234" required>
                     </div>
                 </div>
 
@@ -87,7 +89,7 @@
     
         </div>
 
-        <input type="submit" value="proceed to checkout" class="submit-btn">
+        <input type="submit" value="proceed to checkout" class="submit-btn" onclick="ClickforAlert()">
 
     </form>
 
