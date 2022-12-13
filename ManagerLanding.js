@@ -63,7 +63,7 @@ const appendMenuItems = () => {
     <img class="shop-item-image" src="${foodItems.image}" alt="">
     <h3 class="itemName">${foodItems.name}</h3>
     <div class="shop-item-details">
-    <span class="shop-item-price">$9.99</span> <br> 
+    <span class="shop-item-price">${foodItems.price}</span> <br> 
     <button class="btn btn-primary shop-item-button" type="button">Item back to cart</button>
     `
     menulist.appendChild(newMenuItem1)
