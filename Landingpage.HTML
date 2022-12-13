@@ -1,5 +1,3 @@
-ines (251 sloc)  13.1 KB
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,7 +16,7 @@ ines (251 sloc)  13.1 KB
             <ul class="menu-ul">
                 <a href="Landingpage.HTML" class="a-menu"><li>Home</li></a>
                 <a href="SpecialDeals.HTML" class="a-menu"><li>Deals</li></a>
-                <a href="checkoutpage.HTML" class="a-menu"><li>Checkout</li></a>
+                <a href="PaymentGateway.HTML"  class="a-menu"><li>Checkout</li></a>
                 <a href="SIGNUP.html" class="a-menu"><li>Log Out</li></a>
             </ul>
         </div>
@@ -35,7 +33,10 @@ ines (251 sloc)  13.1 KB
         <span class="cart-price cart-header cart-column">PRICE</span>
         <span class="cart-quantity cart-header cart-column">QUANTITY</span>
     </div>
-    <div class="cart-items">
+    <div class="cart-items" onload="loadCart(this)">
+        <div>
+           
+        </div>
 
     </div>
     <div class="cart-total">

@@ -109,11 +109,9 @@ function AddtoCart(button) {
 function loadCart(cart) {
     localStorage.getItem(everythingitem);
     for (let i = 0; i <everythingitem.length; i++) {
-        let everythingitem = localStorage.itemEverything(i);
-        let checkItem = localStorage.getItem(everythingitem);
+        let everythingitem = localStorage.everythingitem(i);
     }
 }
-
 
 
 
