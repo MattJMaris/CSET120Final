@@ -111,6 +111,7 @@ function loadCart(cart) {
     for (let i = 0; i <everythingitem.length; i++) {
         let everythingitem = localStorage.everythingitem(i);
     }
+    append(everythingitem)
 }
 
 
