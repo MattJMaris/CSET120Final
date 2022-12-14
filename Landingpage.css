@@ -591,3 +591,43 @@ width: 240ch;
     text-align: center;
     color: #515ec1;
 }
+
+.itemImage {
+    height: 200px;
+    width: 200px;
+    border-radius: 50px 50px 50px 50px;
+    border-radius: 50px 50px 50px 50px;
+    padding: 10px;
+}
+
+.itemImage size {
+    height: 200px;
+    width: 300px;
+    padding: 5px;
+}
+
+.itemTitle {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.itemInput {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.itemPrice {
+    width: 300in;
+    font-size: 20px;
+    font-weight: bold;
+}
