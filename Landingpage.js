@@ -1,6 +1,8 @@
 let menuitem = document.getElementsByClassName('menuitem')[0];
 var foodItems = JSON.parse(localStorage.getItem('foodItems'));
 
+let cart_items = document.getElementsByClassName("cart-items")[0]
+
 function renderManagerMenu() {
     // Clear the menuitem element
     menuitem.innerHTML = "";
@@ -87,6 +89,7 @@ function quantityChanged(event) {
 
 
 
+
 function AddtoCart(button) {
     var checkItem = JSON.parse(localStorage.getItem("everythingitem"));console.log(checkItem);
     if (checkItem == null) checkItem = []; console.log("test");
@@ -99,6 +102,9 @@ function AddtoCart(button) {
         'image':image, 
         'price':price
     };
+    let e = item.cloneNode(true)
+    cart_items.appendChild(e)
+    console.log("yeeee")
     //localStorage.setItem("itemEverything", JSON.stringify(itemEverything));
     checkItem.push(itemEverything);
     localStorage.setItem("everythingitem", JSON.stringify(checkItem));
@@ -208,3 +214,21 @@ function SlideShow(n) {
   slides[slidePosition-1].style.display = "block";
   circles[slidePosition-1].className += " enable";
 }
+
+
+var shopcart = localStorage.getItem("everythingitem")
+for (let i = 0; i < shopcart.length; i++) {
+    
+    let shopItem = document.getElementsByClassName("template")[0]
+    let cloneditem = shopItem.CloneNode(true)
+
+    let img = shopItem.children[0]
+    let name = shopItem.children[1]
+    let price = shopItem.children[2]
+    let quantity = shopItem.children[3]
+
+    name.textContent = shopcart.title
+    
+
+  }
+

@@ -601,9 +601,10 @@ width: 240ch;
 }
 
 .itemImage size {
-    height: 200px;
-    width: 300px;
+    height: 80px;
+    width: 180px;
     padding: 5px;
+    margin-bottom: 15px;
 }
 
 .itemTitle {
@@ -627,7 +628,13 @@ width: 240ch;
 }
 
 .itemPrice {
-    width: 300in;
+    width: 275in;
     font-size: 20px;
     font-weight: bold;
+}
+
+.template {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
