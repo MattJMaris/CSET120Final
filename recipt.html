@@ -1,60 +1,43 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="recipt.css">
-    <title>Complete your purchase</title>
-</head>
-<body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Receipt</title>
+    <style>
+    table {
+  border-collapse: collapse;
+}
 
-    <header>
-        <h1 class="logo">Mario</h1>
-        <ul class="menu-container">
-            <button><link rel="stylesheet" href="LOGIN.html"><li class="menu-item">Home</li></button>
-        </ul>
+    th, td {
+     border: 1px solid black;
+        padding: 5px;
+}
 
-    </header>
+    th {
+        text-align: left;
+}
+    </style>
+  </head>
+  <body>
+    <h1>Receipt</h1>
+    <div id="receipt"></div>
+    <sCript>
+            // Get the element where the receipt will be displayed
+    const receiptEl = document.getElementById('receipt');
 
-    <div class="progress-checkout-container">
-        <div class="progress-step-container">
-            <div class="step-check"></div>
-            <span class="step-title">Shipping</span>
-        </div>
-        <div class="progress-step-container">
-            <div class="step-check"></div>
-            <span class="step-title">Payment</span>
-        </div>
-        <div class="progress-step-container">
-            <div class="step-check"></div>
-            <span class="step-title">Review</span>
-        </div>
-    </div>
-    
-    <div class="form-container">
-        <h2 class="form-title">Payment Details</h2>
-        <form action="" class="checkout-form">
-            <div class="input-line">
-                <label for="name">Name on card</label>
-                <input type="text" name="name" id="name" placeholder="Your name and surname">
-            </div>
-            <div class="input-line">
-                <label for="name">Card number</label>
-                <input type="text" name="name" id="name" placeholder="1111-2222-3333-4444">
-            </div>
-            <div class="input-container">
-                <div class="input-line">
-                    <label for="name">Expiring Date</label>
-                    <input type="text" name="name" id="name" placeholder="09-21">
-                </div>
-                <div class="input-line">
-                    <label for="name">CVC</label>
-                    <input type="password" name="name" id="name" placeholder="***">
-                </div>
-            </div>
-            <input type="button" value="Complete purchase">
-        </form>
-    </div>
+    // Get the items and prices from local storage
+    const items = JSON.parse(localStorage.getItem('items'));
+    const prices = JSON.parse(localStorage.getItem('prices'));
 
-</body>
+    // Create a table to display the items and prices
+    const table = document.createElement('table');
+
+    // Create a row for the table headings
+    const headingsRow = document.createElement('tr');
+    const itemHeading = document.createElement('th');
+    itemHeading.textContent = 'Item';
+    const priceHeading = document.createElement('th');
+    priceHeading.textContent = 'Price';
+    headingsRow.appendChild(item)
+    </sCript>
+  </body>
 </html>
