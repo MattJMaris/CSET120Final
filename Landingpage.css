@@ -469,3 +469,108 @@ width: 240ch;
     background: none;
     border: none;
 }
+
+.slideshow-container {
+    max-width: 700px;
+    position: relative;
+    margin: auto;
+  }
+.Containers {
+    display: none;
+  }
+  
+.Back, .forward {
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    margin-top: -23px;
+    padding: 17px;
+    color: #515ec1;;
+    font-weight: bold;
+    font-size: 19px;
+    transition: 0.4s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+}
+.Back{
+     margin-left: 5px;
+}
+  
+.forward {
+    margin-right: 5px;
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+.title{
+    text-align: center;
+    color: #515ec1;
+    text-decoration:underline #515ec1;
+    font-size: 20px;
+}
+  
+  
+.Back:hover, .forward:hover {
+    background-color:#515ec1;
+}
+  
+  
+.Info {
+    outline-color: #515ec1;
+    color: white;;
+    font-size: 24px;
+    padding: 10px 10px;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    
+}
+  
+  
+.MessageInfo {
+    color: #515ec1;
+    font-size: 14px;
+    padding: 10px 14px;
+    position: absolute;
+    top: 0;
+}
+  
+  
+.dots {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 3px;
+    background-color: #515ec1;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+  
+.enable, .dots:hover {
+    background-color: #515ec1;;
+}
+  
+  
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.4s;
+    animation-name: fade;
+    animation-duration: 1.4s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+}
+  
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 2}
+}
+.images{
+    border:5px solid #515ec1;
+    border-radius: 10px;
+}
+
