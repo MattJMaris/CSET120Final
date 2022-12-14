@@ -569,8 +569,25 @@ width: 240ch;
     from {opacity: .5}
     to {opacity: 2}
 }
-.images{
+.images {
     border:5px solid #515ec1;
     border-radius: 10px;
 }
 
+.birthday-title {
+    text-align: center;
+    margin: auto;
+    color: #515ec1;
+}
+.birthday {
+    margin: auto;
+}
+.birthday, img {
+    height: 200px;
+    width: 250px;
+}
+.birthday-cap {
+    margin: auto;
+    text-align: center;
+    color: #515ec1;
+}
